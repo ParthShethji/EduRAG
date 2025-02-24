@@ -1,0 +1,4 @@
+.env
+faiss.index
+venv
+stored_chunks.pkl
