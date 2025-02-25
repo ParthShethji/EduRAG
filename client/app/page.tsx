@@ -69,7 +69,13 @@ export default function HomePage() {
                   <Button className="w-full bg-purple-600 hover:bg-purple-700">Sign In</Button>
                 </DialogContent>
               </Dialog>
-              <Button className="bg-purple-600 hover:bg-purple-700">Get Started</Button>
+              {/* <Button className="bg-purple-600 hover:bg-purple-700">Get Started</Button> */}
+              <Link href="/feature">
+            <Button className="bg-purple-600 hover:bg-purple-700">
+                Get Started
+            </Button>
+        </Link>
+
             </div>
           </div>
         </div>
@@ -92,7 +98,8 @@ export default function HomePage() {
             note-taking features.
           </p>
           <div className="flex justify-center gap-4">
-            <Button className="bg-purple-600 hover:bg-purple-700 text-lg px-8">Start Learning</Button>
+            <Link href="/feature">  <Button className="bg-purple-600 hover:bg-purple-700 text-lg px-8">Start Learning</Button>
+            </Link>
             <Button variant="outline" className="border-purple-500 hover:bg-purple-500/20 text-lg px-8">
               Watch Demo
             </Button>
