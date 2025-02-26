@@ -145,13 +145,14 @@ export default function HomePage() {
 
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-24 relative">
-        <motion.div
+      <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="relative z-10 text-center space-y-8"
         >
+      <section className="container mx-auto px-4 py-24 relative">
+
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 text-transparent bg-clip-text [text-shadow:0_0_30px_rgba(168,85,247,0.3)]">
             Your Smart Study Assistant
           </h1>
@@ -170,10 +171,7 @@ export default function HomePage() {
               Watch Demo
             </Button>
           </div>
-        </motion.div>
-        {[...Array(5)].map((_, i) => (
-          <FloatingParticle key={i} delay={i * 0.2} />
-        ))}
+
       </section>
 
       {/* Features Section */}
@@ -281,7 +279,12 @@ export default function HomePage() {
             </Button>
           </div>
         </div>
+
       </section>
+      </motion.div>
+        {[...Array(5)].map((_, i) => (
+          <FloatingParticle key={i} delay={i * 0.2} />
+        ))}
 
       {/* Footer */}
       <footer className="border-t border-purple-500/10 mt-24 bg-black/20">
